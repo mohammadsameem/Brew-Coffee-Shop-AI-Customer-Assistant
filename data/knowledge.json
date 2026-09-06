@@ -21,7 +21,7 @@
     { "name": "Blueberry Muffin", "price": 3.50, "category": "Food", "notes": "Baked fresh daily. Contains gluten and dairy.", "image": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=150&h=150&fit=crop" }
   ],
   "policies": {
-    "loyalty": "Buy 9 coffees, get the 10th free with our physical punch card.",
+    "loyalty": "Buy 9 drinks, get the 10th free — tracked automatically in your account, no punch card needed. Check your progress in the Loyalty Status bar in the sidebar.",
     "allergens": "We offer oat and almond milk. We cannot guarantee a completely nut-free environment.",
     "refunds": "If you are not satisfied with your drink, we will remake it for free.",
     "wifi": "Free high-speed WiFi available for customers. Network: brewGuest, Password: brewcoffeeshop"
