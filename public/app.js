@@ -505,10 +505,43 @@ chatForm.addEventListener('submit', async (e) => {
     }
 });
 
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+// Converts a small, safe subset of markdown (bold + simple bullet lines) to
+// HTML. Input is HTML-escaped first, so this can never inject raw tags from
+// model or user text — only the **/- markers we explicitly turn into <b>/<li>.
+function renderAssistantMarkdown(text) {
+    const escaped = escapeHtml(text);
+    const withBold = escaped.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+    const lines = withBold.split('\n');
+    let html = '';
+    let inList = false;
+    for (const line of lines) {
+        const bulletMatch = line.match(/^\s*[\*\-]\s+(.*)$/);
+        if (bulletMatch) {
+            if (!inList) { html += '<ul>'; inList = true; }
+            html += `<li>${bulletMatch[1]}</li>`;
+        } else {
+            if (inList) { html += '</ul>'; inList = false; }
+            html += line.length ? `<p>${line}</p>` : '';
+        }
+    }
+    if (inList) html += '</ul>';
+    return html;
+}
+
 function appendMessage(text, role) {
     const el = document.createElement('div');
     el.className = `message ${role}`;
-    el.textContent = text;
+    if (role === 'assistant') {
+        el.innerHTML = renderAssistantMarkdown(text);
+    } else {
+        el.textContent = text;
+    }
     
     if (role === 'assistant') {
         const feedbackDiv = document.createElement('div');
