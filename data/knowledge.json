@@ -1,0 +1,34 @@
+{
+  "shopName": "brew Coffee Shop",
+  "locations": [
+    {
+      "name": "Downtown",
+      "address": "123 Main St, Cityville"
+    },
+    {
+      "name": "Westside",
+      "address": "456 West Ave, Cityville"
+    }
+  ],
+  "hours": "Mon-Fri 7AM-5PM, Sat-Sun 8AM-4PM",
+  "menu": [
+    { "name": "Espresso", "price": 3.00, "category": "Hot Drinks", "notes": "Rich and bold single shot.", "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=150&h=150&fit=crop" },
+    { "name": "Cappuccino", "price": 4.50, "category": "Hot Drinks", "notes": "Equal parts espresso, steamed milk, and foam.", "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?w=150&h=150&fit=crop" },
+    { "name": "Latte", "price": 4.75, "category": "Hot Drinks", "notes": "Espresso with plenty of steamed milk.", "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=150&h=150&fit=crop" },
+    { "name": "Cold Brew", "price": 5.00, "category": "Cold Drinks", "notes": "Steeped for 18 hours for a smooth finish.", "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=150&h=150&fit=crop" },
+    { "name": "Iced Vanilla Latte", "price": 5.50, "category": "Cold Drinks", "notes": "Our classic latte over ice with vanilla syrup.", "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=150&h=150&fit=crop" },
+    { "name": "Avocado Toast", "price": 8.00, "category": "Food", "notes": "Sourdough, smashed avocado, chili flakes. Vegan.", "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?w=150&h=150&fit=crop" },
+    { "name": "Blueberry Muffin", "price": 3.50, "category": "Food", "notes": "Baked fresh daily. Contains gluten and dairy.", "image": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=150&h=150&fit=crop" }
+  ],
+  "policies": {
+    "loyalty": "Buy 9 coffees, get the 10th free with our physical punch card.",
+    "allergens": "We offer oat and almond milk. We cannot guarantee a completely nut-free environment.",
+    "refunds": "If you are not satisfied with your drink, we will remake it for free.",
+    "wifi": "Free high-speed WiFi available for customers. Network: brewGuest, Password: brewcoffeeshop"
+  },
+  "faq": [
+    "Q: Do you sell whole beans? A: Yes, we sell 12oz bags of our house blend and rotating single-origins.",
+    "Q: Is there parking? A: The Downtown location has street parking. Westside has a small lot in the back.",
+    "Q: Do you cater? A: We offer coffee carafes and pastry boxes for local offices. Requires 24h notice."
+  ]
+}

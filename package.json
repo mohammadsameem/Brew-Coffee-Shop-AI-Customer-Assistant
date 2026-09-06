@@ -1,0 +1,23 @@
+{
+  "name": "bluebird-coffee-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.0",
+    "firebase": "^12.18.0",
+    "firebase-admin": "^14.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0"
+  }
+}

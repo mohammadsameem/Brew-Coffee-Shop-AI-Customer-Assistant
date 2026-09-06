@@ -1,0 +1,8 @@
+{
+  "name": "brew Coffee Shop",
+  "description": "A coffee shop AI assistant and ordering portal.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
